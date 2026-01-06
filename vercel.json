@@ -1,5 +1,5 @@
 {
-  "buildCommand": "git lfs install && git lfs pull && npm run build",
+  "buildCommand": "git lfs install && git remote set-url origin https://github.com/chakra3301/archive.git && git lfs pull || true && npm run build",
   "installCommand": "npm install"
 }
 

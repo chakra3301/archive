@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "postinstall": "git lfs install && git lfs pull || true",
+    "postinstall": "git lfs install && git remote set-url origin https://github.com/chakra3301/archive.git 2>/dev/null || true && git lfs pull || true",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
