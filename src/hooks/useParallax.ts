@@ -15,7 +15,6 @@ export function useParallax(speed: number = 0.5) {
     const handleScroll = () => {
       if (!ref.current) return;
 
-      const rect = ref.current.getBoundingClientRect();
       const scrolled = window.scrollY;
 
       // Calculate parallax offset

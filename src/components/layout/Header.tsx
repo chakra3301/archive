@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -12,7 +11,6 @@ export const Header: React.FC = () => {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setIsScrolled(currentScrollY > 50);
       
       // Fade out when scrolling down, fade in when scrolling up
       if (currentScrollY > lastScrollY && currentScrollY > 100) {

@@ -31,7 +31,7 @@ export interface Product {
     materials?: string[];
     dimensions?: string;
     colors?: string[];
-    [key: string]: any; // Flexible for different product types
+    [key: string]: unknown; // Flexible for different product types
   };
   tags?: string[];
   featured?: boolean;
